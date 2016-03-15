@@ -45,7 +45,7 @@
                 
             }  catch (\PDOException $err){
 
-                self::geraErro($err);
+                self::makeError($err);
                 exit;
 
             }
@@ -70,7 +70,7 @@
             
 	}
         
-        public static function geraErro($err){
+        public static function makeError($err){
             
             echo '<pre>';
             print_r($err);
