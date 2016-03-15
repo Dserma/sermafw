@@ -44,7 +44,7 @@
                 
             } catch (\PDOException $err) {
                 
-                \DAO\Conn\PDO::geraErro($err);
+                \DAO\Conn\PDO::makeError($err);
 
             }
             
