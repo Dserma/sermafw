@@ -6,7 +6,6 @@
     
     $tpl    = new Template();
     $tpl    ->setFile( __NAMESPACE__, 'Index' );
-    $tpl    ->setData( "title", "Lista de Usuários");
 
     $js     = $tpl->makeResource(__NAMESPACE__, 'JS', 'User');
     $css    = $tpl->makeResource(__NAMESPACE__, 'CSS', 'Helper');
