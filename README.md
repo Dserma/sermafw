@@ -40,4 +40,5 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
   [Config/ConfigDAO.php]
 
   In the file "Config/ConfigDAO.php" we have to config the "driver", "host", "user" and "password" for our database.
+  
   In "driver" variable, we can use "mysql", to MySql database, or "dblib", for MS-SQL Server in Linux.
