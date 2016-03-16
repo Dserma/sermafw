@@ -51,7 +51,7 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
   >$router  = new Router();
   >          
   >$router->add('/', function() {
-  >new Load('Main');
+  >   new Load('Main');
   >});
       
   This will tell to SermaFW that, when the URI of our application is empty, or just a slash ( / ), the user will be redirected to the Main module.  
