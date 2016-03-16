@@ -21,9 +21,11 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
   #-System/Config.php
 
   Go to the folder System, and get the file Config.php. 
-  The "$app" variable contains the folder of your application. Ex: if you did put the SermaFW in a folder named "framework", so, your "$app" variable would be "$app = 'framework';".
+  The "$app" variable contains the folder of your application. 
+  Ex: if you did put the SermaFW in a folder named "framework", so, your "$app" variable would be "$app = 'framework';".
   
   The "$layouts" array will tell the SermaFW how many and what are the layouts you will have in the application. Yes, in SermaFW you can have multiples layouts.
+  
   We have four kinds of layout:
     - Main    -> The main layout;
     - Offline -> You can use this layout if you will have any kind of logon in your application. The offline layout can hide some menus, or other items that, only a logged user can see;
