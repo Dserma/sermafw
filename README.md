@@ -20,25 +20,29 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
 
   [System/Config.php]
 
-  Go to the folder System, and get the file Config.php. 
-  The "$app" variable contains the folder of your application. 
-  Ex: if you did put the SermaFW in a folder named "framework", so, your "$app" variable would be "$app = 'framework';".
-  
-  The "$layouts" array will tell the SermaFW how many and what are the layouts you will have in the application. 
-  Yes, in SermaFW you can have multiples layouts.
-  
-  We have four kinds of layout:
-  
-    - Main    -> The main layout;
+    Go to the folder System, and get the file Config.php. 
+    The "$app" variable contains the folder of your application. 
+    Ex: if you did put the SermaFW in a folder named "framework", so, your "$app" variable would be "$app = 'framework';".
     
-    - Offline -> You can use this layout if you will have any kind of logon in your application. The offline layout can hide some menus, or other items that, only a logged user can see;
+    The "$layouts" array will tell the SermaFW how many and what are the layouts you will have in the application. 
+    Yes, in SermaFW you can have multiples layouts.
+  
+    We have four kinds of layout:
     
-    - Online  -> You can use this layout to show to a logged user the menus, options and some other stuff;
-    
-    - 404     -> The layout called when we have a 404-page not found error.
+      - Main    -> The main layout;
+      
+      - Offline -> You can use this layout if you will have any kind of logon in your application. The offline layout can hide some menus, or other items that, only a logged user can see;
+      
+      - Online  -> You can use this layout to show to a logged user the menus, options and some other stuff;
+      
+      - 404     -> The layout called when we have a 404-page not found error.
 
   [Config/ConfigDAO.php]
 
-  In the file "Config/ConfigDAO.php" we have to config the "driver", "host", "user" and "password" for our database.
+    In the file "Config/ConfigDAO.php" we have to configure the "driver", "host", "user" and "password" for our database.
+    
+    In "driver" variable, we can use "mysql", to MySql database, or "dblib", for MS-SQL Server in Linux.
   
-  In "driver" variable, we can use "mysql", to MySql database, or "dblib", for MS-SQL Server in Linux.
+  [Config/Routes.php]
+  
+    
