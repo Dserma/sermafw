@@ -45,4 +45,16 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
   
   [Config/Routes.php]
   
+    Here we tell to SermaFW all te routes that we will use in the application. The routes will lead our users to the Modules in our application.
     
+    The modules stay in the "Modules" folder.
+    
+    Let's see an axample of a route:
+    
+      $router  = new Router();
+            
+      $router->add('/', function() {
+           new Load('Main');
+      });
+      
+    This will tell to SermaFW that, when the URI of our application is empty, or just a slash ( / ), the user will be redirected to the Main module.  
