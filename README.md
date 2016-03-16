@@ -18,7 +18,7 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
   
 #Configuration
 
-  ##System/Config.php
+##System/Config.php
 
   Go to the folder System, and get the file Config.php. 
   The `$app` variable contains the folder of your application. 
@@ -29,13 +29,10 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
 
   We have four kinds of layout:
     
-    - Main    -> The main layout;
-    
-    - Offline -> You can use this layout if you will have any kind of logon in your application. The offline layout can hide some menus, or other items that, only a logged user can see;
-    
-    - Online  -> You can use this layout to show to a logged user the menus, options and some other stuff;
-    
-    - 404     -> The layout called when we have a 404-page not found error.
+  - Main    -> The main layout;
+  - Offline -> You can use this layout if you will have any kind of logon in your application. The offline layout can hide some menus, or other items that, only a logged user can see;
+  - Online  -> You can use this layout to show to a logged user the menus, options and some other stuff;
+  - 404     -> The layout called when we have a 404-page not found error.
 
 ##Config/ConfigDAO.php
 
@@ -51,11 +48,11 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
   
   Let's see an axample of a route:
     
-      $router  = new Router();
-            
-      $router->add('/', function() {
-           new Load('Main');
-      });
+  >$router  = new Router();
+  >          
+  >$router->add('/', function() {
+  >new Load('Main');
+  >});
       
   This will tell to SermaFW that, when the URI of our application is empty, or just a slash ( / ), the user will be redirected to the Main module.  
   
