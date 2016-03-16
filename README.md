@@ -27,9 +27,13 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
   The "$layouts" array will tell the SermaFW how many and what are the layouts you will have in the application. Yes, in SermaFW you can have multiples layouts.
   
   We have four kinds of layout:
+  
     - Main    -> The main layout;
+    
     - Offline -> You can use this layout if you will have any kind of logon in your application. The offline layout can hide some menus, or other items that, only a logged user can see;
+    
     - Online  -> You can use this layout to show to a logged user the menus, options and some other stuff;
+    
     - 404     -> The layout called when we have a 404-page not found error.
     
     #-Config/ConfigDAO.php
