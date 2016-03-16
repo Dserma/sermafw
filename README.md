@@ -18,13 +18,13 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
   
 #Configuration
 
-  [System/Config.php]
+  ##System/Config.php
 
   Go to the folder System, and get the file Config.php. 
-  The "$app" variable contains the folder of your application. 
-  Ex: if you did put the SermaFW in a folder named "framework", so, your "$app" variable would be "$app = 'framework';".
+  The `$app` variable contains the folder of your application. 
+  Ex: if you did put the SermaFW in a folder named "framework", so, your `$app"`variable would be "$app = 'framework';".
   
-  The "$layouts" array will tell the SermaFW how many and what are the layouts you will have in the application. 
+  The `$layouts` array will tell the SermaFW how many and what are the layouts you will have in the application. 
   Yes, in SermaFW you can have multiples layouts.
 
   We have four kinds of layout:
@@ -37,17 +37,17 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
     
     - 404     -> The layout called when we have a 404-page not found error.
 
-[Config/ConfigDAO.php]
+##Config/ConfigDAO.php
 
-  In the file "Config/ConfigDAO.php" we have to configure the "driver", "host", "user" and "password" for our database.
+  In the file `Config/ConfigDAO.php` we have to configure the `driver, host, user and password` for our database.
   
-  In "driver" variable, we can use "mysql", to MySql database, or "dblib", for MS-SQL Server in Linux.
+  In `driver` variable, we can use `mysql`, to MySql database, or `dblib`, for MS-SQL Server in Linux.
 
-[Config/Routes.php]
+##Config/Routes.php
   
   Here we tell to SermaFW all te routes that we will use in the application. The routes will lead our users to the Modules in our application.
   
-  The modules stay in the "Modules" folder.
+  The modules are in the "Modules" folder.
   
   Let's see an axample of a route:
     
@@ -58,3 +58,5 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
       });
       
   This will tell to SermaFW that, when the URI of our application is empty, or just a slash ( / ), the user will be redirected to the Main module.  
+  
+  The ".+" select is a "joker". We use this when we have an 
