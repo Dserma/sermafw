@@ -18,7 +18,7 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
   
 #Configuration
 
-  #-System/Config.php
+  [System/Config.php]
 
   Go to the folder System, and get the file Config.php. 
   The "$app" variable contains the folder of your application. 
@@ -35,7 +35,5 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
     - Online  -> You can use this layout to show to a logged user the menus, options and some other stuff;
     
     - 404     -> The layout called when we have a 404-page not found error.
-    
-    #-Config/ConfigDAO.php
-    
-    
+
+  [Config/ConfigDAO.php]
