@@ -24,7 +24,8 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
   The "$app" variable contains the folder of your application. 
   Ex: if you did put the SermaFW in a folder named "framework", so, your "$app" variable would be "$app = 'framework';".
   
-  The "$layouts" array will tell the SermaFW how many and what are the layouts you will have in the application. Yes, in SermaFW you can have multiples layouts.
+  The "$layouts" array will tell the SermaFW how many and what are the layouts you will have in the application. 
+  Yes, in SermaFW you can have multiples layouts.
   
   We have four kinds of layout:
   
@@ -37,3 +38,6 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
     - 404     -> The layout called when we have a 404-page not found error.
 
   [Config/ConfigDAO.php]
+
+  In the file "Config/ConfigDAO.php" we have to config the "driver", "host", "user" and "password" for our database.
+  In "driver" variable, we can use "mysql", to MySql database, or "dblib", for MS-SQL Server in Linux.
