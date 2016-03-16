@@ -20,36 +20,36 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
 
   [System/Config.php]
 
-    Go to the folder System, and get the file Config.php. 
-    The "$app" variable contains the folder of your application. 
-    Ex: if you did put the SermaFW in a folder named "framework", so, your "$app" variable would be "$app = 'framework';".
-    
-    The "$layouts" array will tell the SermaFW how many and what are the layouts you will have in the application. 
-    Yes, in SermaFW you can have multiples layouts.
+  Go to the folder System, and get the file Config.php. 
+  The "$app" variable contains the folder of your application. 
+  Ex: if you did put the SermaFW in a folder named "framework", so, your "$app" variable would be "$app = 'framework';".
   
-    We have four kinds of layout:
-    
-      - Main    -> The main layout;
-      
-      - Offline -> You can use this layout if you will have any kind of logon in your application. The offline layout can hide some menus, or other items that, only a logged user can see;
-      
-      - Online  -> You can use this layout to show to a logged user the menus, options and some other stuff;
-      
-      - 404     -> The layout called when we have a 404-page not found error.
+  The "$layouts" array will tell the SermaFW how many and what are the layouts you will have in the application. 
+  Yes, in SermaFW you can have multiples layouts.
 
-  [Config/ConfigDAO.php]
+  We have four kinds of layout:
+    
+    - Main    -> The main layout;
+    
+    - Offline -> You can use this layout if you will have any kind of logon in your application. The offline layout can hide some menus, or other items that, only a logged user can see;
+    
+    - Online  -> You can use this layout to show to a logged user the menus, options and some other stuff;
+    
+    - 404     -> The layout called when we have a 404-page not found error.
 
-    In the file "Config/ConfigDAO.php" we have to configure the "driver", "host", "user" and "password" for our database.
-    
-    In "driver" variable, we can use "mysql", to MySql database, or "dblib", for MS-SQL Server in Linux.
+[Config/ConfigDAO.php]
+
+  In the file "Config/ConfigDAO.php" we have to configure the "driver", "host", "user" and "password" for our database.
   
-  [Config/Routes.php]
+  In "driver" variable, we can use "mysql", to MySql database, or "dblib", for MS-SQL Server in Linux.
+
+[Config/Routes.php]
   
-    Here we tell to SermaFW all te routes that we will use in the application. The routes will lead our users to the Modules in our application.
-    
-    The modules stay in the "Modules" folder.
-    
-    Let's see an axample of a route:
+  Here we tell to SermaFW all te routes that we will use in the application. The routes will lead our users to the Modules in our application.
+  
+  The modules stay in the "Modules" folder.
+  
+  Let's see an axample of a route:
     
       $router  = new Router();
             
@@ -57,4 +57,4 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
            new Load('Main');
       });
       
-    This will tell to SermaFW that, when the URI of our application is empty, or just a slash ( / ), the user will be redirected to the Main module.  
+  This will tell to SermaFW that, when the URI of our application is empty, or just a slash ( / ), the user will be redirected to the Main module.  
