@@ -7,6 +7,9 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
 
 #DEMO
   http://www.refreshweb.com.br/SermaFW/
+  
+##CRUD
+  http://www.refreshweb.com.br/CRUD/
 
 ---------------------------------------------------------------------------------
 
