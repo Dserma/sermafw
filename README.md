@@ -49,7 +49,7 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
   
   The modules are in the "Modules" folder.
   
-  Let's see an axample of a route:
+  Let's see an example of a route:
   
   ```php  
   $router  = new Router();
@@ -64,6 +64,7 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
   The `.+` selector is a joker. We use this when we have an `action`, or an `action` and a `value`.
   For example, when we have the URI: `http://localhost/SermaFW/Users/Edit/40`, we have to redrect the user to our Module `Users`, to our controller `Edit.php`, passing the value `40` as an ID of the user.
   So, we have to make the route like this:
+  a
   ```php
   $router  = new Router();
             
