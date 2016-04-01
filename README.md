@@ -50,24 +50,26 @@ This is a simple PHP framework, recommended to beginners in PHP and MVC structur
   The modules are in the "Modules" folder.
   
   Let's see an axample of a route:
-    
-  >$router  = new Router();
-  >          
-  >$router->add('/', function() {
-  >   new Load('Main');
-  >});
+  
+  ```php  
+  $router  = new Router();
+            
+  $router->add('/', function() {
+     new Load('Main');
+  });
+  ```
       
   This will tell to SermaFW that, when the URI of our application is empty, or just a slash ( / ), the user will be redirected to the Main module.  
   
   The `.+` selector is a joker. We use this when we have an `action`, or an `action` and a `value`.
   For example, when we have the URI: `http://localhost/SermaFW/Users/Edit/40`, we have to redrect the user to our Module `Users`, to our controller `Edit.php`, passing the value `40` as an ID of the user.
   So, we have to make the route like this:
-  
-   >$router  = new Router();
-  >          
-  >$router->add('/Users/.+/.+', function($action, $value) {
-  >   new Load('Users', array( 'action' => $action, "value" => $value ));
-  >});
-  
+  ```php
+  $router  = new Router();
+            
+  $router->add('/Users/.+/.+', function($action, $value) {
+     new Load('Users', array( 'action' => $action, "value" => $value ));
+  });
+  ```
   
   
